@@ -39,16 +39,21 @@
 
 .relative .naranja {
     position: relative;
-    top: 15px;
-    left: 40px;
+    background: orange;
+    width: 100px;
+    height: 65px;
+    top: 65px;
+    left: 102px;
 }
 
 /* 3. Absolute */
 
 .absolute .naranja {
     position: absolute;
-    top: 10px;
-    right: 10px;
+  background: orange;
+  width: 100px;
+  height: 68px;
+    right: 5px;
 }
 
 /* 4. Fixed */
