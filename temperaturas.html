@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor de temperaturas</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <img src="fondo.avif" alt="Fondo de encabezado">
+    </header>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Conóceme</a>
+                <ul>
+                    <li><a href="informacion.html">Información personal</a></li>
+                    <li><a href="pasatiempos.html">Pasatiempos</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">Segunda Parcial</a>
+                <ul>
+                    <li><a href="practica1.html">Práctica uno</a></li>
+                    <li><a href="posiciones.html">Posiciones</a></li>
+                    <li><a href="mimundodigital.html">Mi mundo digital</a></li>
+                    <li><a href="practica-posiciones.html">Práctica de posiciones</a></li>
+                    <li><a href="comunidad.html">Comunidad digital</a></li>
+                    <li><a href="temperaturas.html">Conversor de temperaturas</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">Tercera Parcial</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section>
+
+        <aside class="principal">
+
+            <h2>Conversor de temperaturas</h2>
+
+            <p>
+                Esta aplicación permite convertir temperaturas
+                de grados Celsius a Fahrenheit y viceversa.
+            </p>
+
+            <h3>Ingresa los datos</h3>
+
+            <label for="temperatura">Temperatura:</label>
+            <input type="number" id="temperatura"
+                   placeholder="Ingresa una temperatura">
+
+            <br><br>
+
+            <label for="conversion">Tipo de conversión:</label>
+
+            <select id="conversion">
+                <option value="celsius">Celsius a Fahrenheit</option>
+                <option value="fahrenheit">Fahrenheit a Celsius</option>
+            </select>
+
+            <br><br>
+
+            <button onclick="convertir()">Convertir</button>
+
+            <h3 id="resultado">
+                El resultado aparecerá aquí.
+            </h3>
+
+        </aside>
+
+        <aside class="secundario">
+
+            <h2>¿Cómo funciona?</h2>
+
+            <p>
+                Para realizar las conversiones se utilizan
+                dos fórmulas matemáticas.
+            </p>
+
+            <h3>Celsius a Fahrenheit</h3>
+
+            <p>
+                Fahrenheit = (Celsius × 9 / 5) + 32
+            </p>
+
+            <h3>Fahrenheit a Celsius</h3>
+
+            <p>
+                Celsius = (Fahrenheit - 32) × 5 / 9
+            </p>
+
+            <h3>Ejemplo</h3>
+
+            <p>
+                Si ingresamos 30 grados Celsius,
+                el resultado será 86 grados Fahrenheit.
+            </p>
+
+        </aside>
+
+    </section>
+
+    <footer>
+        <img src="logo-udc.png" alt="Logo de la Universidad de Colima">
+
+        <div>
+            <p><strong>Universidad de Colima</strong></p>
+            <p>Bachillerato 8</p>
+            <p>Programación en Internet I</p>
+        </div>
+    </footer>
+
+    <script src="temperaturas.js"></script>
+
+</body>
+</html>
