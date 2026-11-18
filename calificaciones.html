@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de evaluación de calificaciones</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <img src="fondo.avif" alt="Fondo de encabezado">
+    </header>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Conóceme</a>
+                <ul>
+                    <li><a href="informacion.html">Información personal</a></li>
+                    <li><a href="pasatiempos.html">Pasatiempos</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">Segunda Parcial</a>
+                <ul>
+                    <li><a href="practica1.html">Práctica uno</a></li>
+                    <li><a href="posiciones.html">Posiciones</a></li>
+                    <li><a href="mimundodigital.html">Mi mundo digital</a></li>
+                    <li><a href="practica-posiciones.html">Práctica de posiciones</a></li>
+                    <li><a href="comunidad.html">Comunidad digital</a></li>
+                    <li><a href="temperaturas.html">Conversor de temperaturas</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">Tercera Parcial</a>
+                <ul>
+                    <li><a href="calificaciones.html">Sistema de calificaciones</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <section>
+
+        <aside class="principal">
+
+            <h2>Sistema de evaluación de calificaciones</h2>
+
+            <p>
+                Ingresa el nombre del estudiante y sus tres
+                calificaciones para calcular su promedio.
+            </p>
+
+            <h3>Datos del estudiante</h3>
+
+            <label for="nombre">Nombre del estudiante:</label>
+            <input type="text" id="nombre"
+                   placeholder="Escribe el nombre">
+
+            <br><br>
+
+            <label for="calificacion1">Primera calificación:</label>
+            <input type="number" id="calificacion1"
+                   placeholder="Calificación 1" min="0" max="10" step="any">
+
+            <br><br>
+
+            <label for="calificacion2">Segunda calificación:</label>
+            <input type="number" id="calificacion2"
+                   placeholder="Calificación 2" min="0" max="10" step="any">
+
+            <br><br>
+
+            <label for="calificacion3">Tercera calificación:</label>
+            <input type="number" id="calificacion3"
+                   placeholder="Calificación 3" min="0" max="10" step="any">
+
+            <br><br>
+
+            <button onclick="calcularPromedio()">
+                Calcular promedio
+            </button>
+
+            <div id="resultado"></div>
+
+        </aside>
+
+        <aside class="secundario">
+
+            <h2>¿Cómo funciona?</h2>
+
+            <p>
+                Este sistema permite calcular el promedio
+                de un estudiante utilizando tres calificaciones.
+            </p>
+
+            <h3>Fórmula del promedio</h3>
+
+            <p>
+                Promedio = (Calificación 1 + Calificación 2 +
+                Calificación 3) / 3
+            </p>
+
+            <h3>Resultados</h3>
+
+            <p><b>De 6 a 10:</b> Aprobado.</p>
+            <p><b>Menor que 6:</b> Reprobado.</p>
+
+            <h3>Observaciones</h3>
+
+            <p><b>9 a 10:</b> Excelente desempeño.</p>
+            <p><b>8 a 8.9:</b> Muy buen desempeño.</p>
+            <p><b>7 a 7.9:</b> Buen desempeño.</p>
+            <p><b>6 a 6.9:</b> Desempeño suficiente.</p>
+            <p><b>Menor que 6:</b> Necesita mejorar.</p>
+
+        </aside>
+
+    </section>
+
+    <footer>
+        <img src="logo-udc.png" alt="Logo de la Universidad de Colima">
+
+        <div>
+            <p><strong>Universidad de Colima</strong></p>
+            <p>Bachillerato 8</p>
+            <p>Programación en Internet I</p>
+        </div>
+    </footer>
+
+    <script src="calificaciones.js"></script>
+
+</body>
+</html>

@@ -147,3 +147,38 @@ iframe {
     margin-top: 25px;
     color: rgb(2, 86, 86);
 }
+
+/* Estilos del sistema de calificaciones */
+
+.principal input {
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.principal button {
+    padding: 10px 25px;
+    background-color: rgb(211, 72, 102);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.principal button:hover {
+    background-color: rgb(180, 55, 85);
+}
+
+#resultado {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: rgb(240, 248, 248);
+    border-radius: 10px;
+}
+
+#resultado h3 {
+    color: rgb(211, 72, 102);
+}
